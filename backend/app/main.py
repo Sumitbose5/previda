@@ -20,7 +20,7 @@ app = FastAPI(title="Previda API")
 # This allows your React frontend to communicate with this backend
 origins = [
     "http://localhost:5173",  # Vite default
-    "https://previda.vercel.app", # Replace with your actual production domain
+    "https://previda-chi.vercel.app", # Replace with your actual production domain
 ]
 
 app.add_middleware(
