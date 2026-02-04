@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-electric-purple: #A32EFF;
+  --color-neon-green: #00FF00;
+  --color-dark-gray: #1a1a1a;
+  --color-off-white: #f8f8f8;
+
+  --shadow-neo: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-neo-purple: 6px 6px 0px 0px #A32EFF;
+  --shadow-neo-green: 6px 6px 0px 0px #00FF00;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-gray text-off-white font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  .neo-btn {
+    @apply border-2 border-black transition-all hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0;
+  }
+}
