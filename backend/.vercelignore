@@ -1,0 +1,37 @@
+# Virtual environments
+venv/
+env/
+.env.local
+.env.development
+.env.test
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Development files
+.env.example
+README.md
+*.md

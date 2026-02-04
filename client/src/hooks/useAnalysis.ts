@@ -1,6 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { useAuth } from '@clerk/clerk-react';
 import { showErrorToast, showInfoToast, showWarningToast, toastMessages } from '../utils/toastConfig';
+import { API_ENDPOINTS } from '../config/api';
 
 interface AnalysisResult {
   themes: string[];
@@ -15,7 +16,7 @@ interface AnalysisRequest {
 }
 
 const fetchAnalysis = async (request: AnalysisRequest, token: string): Promise<AnalysisResult> => {
-  const response = await fetch('http://localhost:8000/generate-ideas', {
+  const response = await fetch(API_ENDPOINTS.GENERATE_IDEAS, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

@@ -19,8 +19,10 @@ app = FastAPI(title="Previda API")
 # --- 1. CORS Configuration ---
 # This allows your React frontend to communicate with this backend
 origins = [
-    "http://localhost:5173",  # Vite default
-    "https://previda-chi.vercel.app", # Replace with your actual production domain
+    "http://localhost:5173",  # Vite default for local development
+    "http://localhost:3000",  # Alternative local development port
+    "https://previda-chi.vercel.app",  # Replace with your actual production domain
+    "https://*.vercel.app",  # Allow all Vercel preview deployments
 ]
 
 app.add_middleware(
