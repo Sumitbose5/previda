@@ -22,7 +22,7 @@ origins = [
     "http://localhost:5173",  # Vite default for local development
     "http://localhost:3000",  # Alternative local development port
     "https://previda-chi.vercel.app",  # Replace with your actual production domain
-    "https://*.vercel.app",  # Allow all Vercel preview deployments
+    "https://www.previda.tech",  
 ]
 
 app.add_middleware(
